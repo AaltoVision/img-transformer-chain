@@ -157,7 +157,7 @@ python train.py -h
 
 The script supports also two special experimental modes not used for the main results in the paper:
 * `double_cycle` adds a loss constraint to ensure that if you run a transformer twice in succession, and then twice in reverse, you get back the original
-* `transform_twice` runs the transformer twice each time
+* `transform_twice` during training, run the transformer twice for each transform step, enforcing robustness for recursive usage
 
 Note that train.py loads the latest checkpoint of your subnet by default, if it exists.
 

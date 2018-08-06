@@ -1,11 +1,11 @@
 # Recursive Chaining of Reversible Image-to-image Translators
 
-![alt text](src/samples/age_15_id_2B.jpg)
-![alt text](src/samples/age_25_id_2B.jpg)
-![alt text](src/samples/age_35_id_2B.jpg)
-![alt text](src/samples/age_45_id_2B.jpg)
-![alt text](src/samples/age_55_id_2B.jpg)
-![alt text](src/samples/age_65_id_2B.jpg)
+![alt text](samples/age_15_id_2B.jpg)
+![alt text](samples/age_25_id_2B.jpg)
+![alt text](samples/age_35_id_2B.jpg)
+![alt text](samples/age_45_id_2B.jpg)
+![alt text](samples/age_55_id_2B.jpg)
+![alt text](samples/age_65_id_2B.jpg)
 
 Code for the paper ["Recursive Chaining of Reversible Image-to-image Translators For Face Aging"](https://arxiv.org/abs/1802.05023) [1].
 
@@ -190,6 +190,8 @@ Test the single-trained 15->25 transformer on 15->25 transform (give your checkp
 ```
 python train.py --save=0 --dataset celeb2_ref --stage1=_age15 --stage2=_age25 --subnet tf1525 --singletestdir /data/imdb_aed/age_15 --singletestdir_out tf1525_from15 --singletestN 100 --prev_checkpoint="Epoch_(113)_(2117of5291)_step_(599999)"
 ```
+
+(There is a known minor issue that the output images randomly get horizontally flipped during testing.)
 
 Test the single-trained 25->35 transformer on 25->35 transform (you have only one such model, so you don't have to specify the `prev_checkpoint`):
 

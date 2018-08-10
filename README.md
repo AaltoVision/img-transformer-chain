@@ -18,7 +18,7 @@ The double-trained 25→35 transformer is applied also to 35→45 transformation
 ![alt text](samples/age_55_id_2B.jpg)
 ![alt text](samples/age_65_id_2B.jpg)
 
-## Source code
+## Source Code
 
 [Source code and utilities on GitHub](https://github.com/AaltoVision/img-transformer-chain)
 
